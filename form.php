@@ -6,7 +6,7 @@ require('script.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>PHP Registration Form</title>
+  <title>PHP Registracijska forma</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,16 +26,16 @@ require('script.php');
     
     <!--====registration form====-->
     <div class="registration-form">
-      <h4 class="text-center">Create a New Account</h4>
+      <h4 class="text-center">Kreirajte novi račun</h4>
       
 <p class="text-success text-center"><?php echo $register; ?></p> <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?><" method="post">
 
 
         <!--//first name//-->
         <div class="form-group">
-           <label for="email">First Name</label>
+           <label for="email">Ime</label>
                
-<input type="text" class="form-control" placeholder="Enter First Name" name="first_name" value="<?php echo $set_firstName;?>">
+<input type="text" class="form-control" placeholder="Unesite Vaše ime" name="first_name" value="<?php echo $set_firstName;?>">
 
            <p class="err-msg">
             
@@ -46,9 +46,9 @@ require('script.php');
 
         <!--//Last name//-->
         <div class="form-group">
-            <label for="email">Last Name</label>
+            <label for="email">Prezime</label>
                 
-<input type="text" class="form-control" placeholder="Enter Last Name" name="last_name" value="<?php echo $set_lastName;?>">
+<input type="text" class="form-control" placeholder="Unesite Vaše prezime" name="last_name" value="<?php echo $set_lastName;?>">
 
             <p class="err-msg"> 
     
@@ -61,7 +61,7 @@ require('script.php');
         <div class="form-group">
             <label for="email">Email:</label>
                 
-<input type="text" class="form-control" id="email" placeholder="Enter email" name="email" value="<?php echo $set_email;?>">
+<input type="text" class="form-control" id="email" placeholder="Unesite Vaš email" name="email" value="<?php echo $set_email;?>">
 
             <p class="err-msg">
     
@@ -72,9 +72,9 @@ require('script.php');
         
         <!--//Password//-->
         <div class="form-group">
-            <label for="pwd">Password:</label>
+            <label for="pwd">Lozinka:</label>
                
-            <input type="password" class="form-control"  placeholder="Enter password" name="password"
+            <input type="password" class="form-control"  placeholder="Unesite lozinku" name="password"
             <p class="err-msg">
                 
 <?php if($passErr!=1){ echo $passErr; } ?>
@@ -84,8 +84,8 @@ require('script.php');
 
         <!--//Confirm Password//-->
         <div class="form-group">
-            <label for="pwd">Confirm Password:</label>
-            <input type="password" class="form-control" placeholder="Enter Confirm password" name="cpassword">
+            <label for="pwd">Potvrda lozinke:</label>
+            <input type="password" class="form-control" placeholder="Unesite ponovo lozinku" name="cpassword">
             <p class="err-msg">
                 
 <?php if($cpassErr!=1){ echo $cpassErr; } ?>
@@ -93,7 +93,7 @@ require('script.php');
             </p>
         </div>
     
-        <button type="submit" class="btn btn-danger" name="submit">Register Now</button>
+        <button type="submit" class="btn btn-danger" name="submit">Registruj se</button>
       </form>
     </div>
    </div>
